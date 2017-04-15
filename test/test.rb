@@ -2,44 +2,22 @@ require 'rubygems'
 require 'gosu'
 include Gosu
 
-class Table
-  attr_accessor :x, :y, :width, :height, :color
-
-  def initialize(window, x, y, width, height, color)
-    #defining x and y axis
-    @x = x
-    @y = y
-    #defining size
+class Ruby
+  def initialize(window, x, y, width, height)
     @width = width
     @height = height
-    @color = color
-    @window = window
-  end
-
-  def draw
-    #draw_quad(x1, y1, c1, x2, y2, c2, x3, y3, c3, x4, y4, c4, z = 0, mode = :default)
-    # points are in clockwise order
-    @window.draw_quad @x, @y, @color, @x + @width, @y, @color, @x + @width, @y + @height, @color, @x, @y + @height, @color
-  end
-end
-
-class Ball
-  def initialize(window)
-    @width = 50
-    @height = 50
-    @x = 200
-    @y = 200
+    @x = x
+    @y = y
     #radius of the image
     @radius = @width/2
     @window = window
-    @ball = Gosu::Image.new(window, 'gem.png', true)
-    # @speed = 5
+    @ruby = Gosu::Image.new(@window, 'gem.png', :options => true)
     @vx = 5
     @vy = 5
   end
 
   def draw
-    @ball.draw_rot(@x, @y, 0, 0)
+    @ruby.draw_rot(@x, @y, 0, 0)
   end
 
   def move
@@ -93,17 +71,15 @@ class Test < Gosu::Window
 
   def initialize(width=600, height=400, fullscreen=false)
     super
-    @ball = Ball.new(self)
-    @table = Table.new(self, 0, 400, 640, 100, Color::WHITE)
+    @ruby = Ruby.new(self, 200, 200, 50, 50)
   end
 
   def update
-    @ball.move
+    @ruby.move
   end
 
   def draw
-    @table.draw
-    @ball.draw
+    @ruby.draw
   end
 
 end
