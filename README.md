@@ -1,6 +1,6 @@
 # Introduction to Gosu
 ## What is Gosu?
-[Gosu](https://www.libgosu.org/) is a 2d game development library for [Ruby](https://www.ruby-lang.org/en/) and [C++](http://www.cplusplus.com/). It is available for macOS, [Windows](https://github.com/gosu/gosu/wiki/Getting-Started-on-Windows), [Linux](https://github.com/gosu/gosu/wiki/Getting-Started-on-Linux) (including [Raspbian](https://github.com/gosu/gosu/wiki/Getting-Started-on-Raspbian-%28Raspberry-Pi%29)), as well as [iOS](https://www.libgosu.org/cpp.html). This tutorial will focus on macOS, so if you're using the other operating systems, we've included handy-dandy links to their installation ways. 
+[Gosu](https://www.libgosu.org/) is a 2d game development library for [Ruby](https://www.ruby-lang.org/en/) and [C++](http://www.cplusplus.com/). It is available for [macOS](https://github.com/gosu/gosu/wiki/Getting-Started-on-OS-X), [Windows](https://github.com/gosu/gosu/wiki/Getting-Started-on-Windows), [Linux](https://github.com/gosu/gosu/wiki/Getting-Started-on-Linux) (including [Raspbian](https://github.com/gosu/gosu/wiki/Getting-Started-on-Raspbian-%28Raspberry-Pi%29)), as well as [iOS](https://www.libgosu.org/cpp.html). This tutorial will focus on macOS, so if you're using the other operating systems, we've included handy-dandy links to their installation ways. 
 
 Gosu is a lightweight engine with few dependencies, and provides:
 * a window and a main loop
@@ -44,4 +44,21 @@ If that worked, Install Fest was successful! :partyparrot:
 
 ## Getting to Know Gosu
 
-
+One of the great things about Gosu are the example games it provides. Install and run the ```gosu-examples``` gem:
+```
+gem install gosu-examples
+gosu-examples
+```
+A few of these games require the following additional libraries:
+```
+gem install chipmunk
+```
+* [Chipmunk2D](https://chipmunk-physics.net/) is a simple, lightweight, fast and portable 2D rigid body physics library written in C. 
+```
+gem install rmagick
+```
+* [RMagick](http://rmagick.rubyforge.org/) is an interface between the Ruby programming language and the ImageMagick® and GraphicsMagick image processing libraries.
+```
+gem install opengl
+```
+* [OpenGL](https://www.opengl.org/) is the premier environment for developing portable, interactive 2D and 3D graphics applications.
