@@ -42,7 +42,7 @@ ruby -rgosu -e 'w = Gosu::Window.new(200, 150); w.caption = "It works!"; w.show'
 ```
 If that worked, Install Fest was successful! :partyparrot:
 
-## Getting to Know Gosu
+#### Gosu-Examples
 
 One of the great things about Gosu are the example games it provides. Install and run the ```gosu-examples``` gem:
 ```
@@ -62,3 +62,7 @@ gem install rmagick
 gem install opengl
 ```
 * [OpenGL](https://www.opengl.org/) is the premier environment for developing portable, interactive 2D and 3D graphics applications.
+
+## Let's Make a Thing!
+
+The best way to learn a new framework or language is to make a simple game or app. We're going to render a ruby in our Gosu window and implement movement to it.
