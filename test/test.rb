@@ -11,7 +11,7 @@ class Ruby
     #radius of the image
     @radius = @width/2
     @window = window
-    @ruby = Gosu::Image.new(@window, 'gem.png', :options => true)
+    @ruby = Gosu::Image.new(@window, 'ruby.png', :options => true)
     @vx = 5
     @vy = 5
   end
