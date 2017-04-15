@@ -72,14 +72,21 @@ class Test < Gosu::Window
   def initialize(width=600, height=400, fullscreen=false)
     super
     @ruby = Ruby.new(self, 200, 200, 50, 50)
+    @rubies = Array.new
+    @randy = Random.new
+
   end
 
   def update
     @ruby.move
+    @ruby_two= Ruby.new(self, @randy.rand(50), @randy.rand(50), 50, 50)
+    @rubies.push(@ruby_two)
+    # @ruby_two = Ruby.new(self, 200, 200, 50, 50)
   end
 
   def draw
     @ruby.draw
+    @rubies.each {|ruby| ruby.draw}
   end
 
 end
