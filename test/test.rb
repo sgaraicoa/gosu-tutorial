@@ -79,9 +79,17 @@ class Test < Gosu::Window
 
   def update
     @ruby.move
-    @ruby_two= Ruby.new(self, @randy.rand(50), @randy.rand(50), 50, 50)
-    @rubies.push(@ruby_two)
+    
     # @ruby_two = Ruby.new(self, 200, 200, 50, 50)
+  end
+
+  def button_down(id)
+    if id == Gosu::KB_SPACE
+      @ruby_two= Ruby.new(self, @randy.rand(), @randy.rand(), 50, 50)
+      @rubies.push(@ruby_two)
+    else
+      super
+    end
   end
 
   def draw
