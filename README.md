@@ -81,7 +81,7 @@ Now you have a Gosu Window!
 
 #### Step Two: Rendering an Image in the Window
 
-![Step Two](http://i.imgur.com/5CraUbf.png)
+![Step Two](http://i.imgur.com/1lw8kMK.png)
 * create a class Ruby
 * initialize method takes four parameters: window, x, y, width, height
 ⋅⋅* create instance variables that equal to those parameters! (ex: @width = width, @height = height)
@@ -100,7 +100,24 @@ Now that we've created our image class, let's implement it in class Tester!
 ⋅⋅* remember initialize(window, x, y, width, height)? 
 
 
-Yay, a ruby!
+Yay, a ruby! 
 
 ![Step Two B](http://i.imgur.com/SIDq6uf.png)
+
+We're not done yet, though! Gosu is a gaming library, after all, and gaming involves movement. Our next step is to implement movement to the image.
+
+#### Step Three: Movement
+
+The following code belongs in your class Ruby
+
+![Step Three](http://i.imgur.com/dYC7LzE.png)
+
+![Step Three A](http://i.imgur.com/VuzgGFJ.png)
+
+![Step Three B](http://i.imgur.com/iwIHBX7.png)
+* my skill in drawing circles is impeccable
+
+
+We've got movement! Go, ruby, go!
+![gif](https://i.gyazo.com/7db1fd534f3f0c14df85fcfff5921896.gif)
 
