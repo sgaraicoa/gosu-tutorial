@@ -77,14 +77,14 @@ class Test < Gosu::Window
     # @ruby= Ruby.new(self, @randy.rand(200), @randy.rand(200), 50, 50)
 
   end
-
+#just triggers when key id is true
   def add_new_ruby(id)
     if id 
       @new_ruby= Ruby.new(self, @randy.rand(600), @randy.rand(400), 50, 50)
       @rubies.push(@new_ruby)
     end
   end
-
+#goes every 60 frames so every 60 frames it goes through the array and adds move
   def update
     @ruby.move
     @rubies.each{ |ruby| ruby.move }
@@ -93,7 +93,7 @@ class Test < Gosu::Window
     # @rubies.each {|ruby| ruby.move} if add_new_ruby
     # @ruby_two = Ruby.new(self, 200, 200, 50, 50)
   end
-
+#add passing id
   def button_down(id)
     if id == Gosu::KB_SPACE
       add_new_ruby(id)
