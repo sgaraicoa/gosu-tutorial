@@ -111,13 +111,16 @@ We're not done yet, though! Gosu is a gaming library, after all, and gaming invo
 The following code belongs in your class Ruby
 
 ![Step Three](http://i.imgur.com/dYC7LzE.png)
+* here we create the following methods: move, right_wall, left_wall, bottom_wall, top_wall, h_bounce, and v_bounce
+
 
 ![Step Three A](http://i.imgur.com/VuzgGFJ.png)
+* 
 
 ![Step Three B](http://i.imgur.com/iwIHBX7.png)
 * my skill in drawing circles is impeccable
 
-
 We've got movement! Go, ruby, go!
+
 ![gif](https://i.gyazo.com/7db1fd534f3f0c14df85fcfff5921896.gif)
 
