@@ -70,7 +70,7 @@ The best way to learn a new framework or language is to make a simple game or ap
 #### Step One: Gosu Window
 
 ![Step One](http://i.imgur.com/r6BKWv0.png)
-* require ruby, gosu, include Gosu
+* require ruby and gosu, include Gosu
 * class Tester inherits from Gosu::Window
 * initialize method takes three parameters: width, height, fullscreen
 * call on class Tester with Tester.new.show
@@ -82,17 +82,23 @@ Now you have a Gosu Window!
 #### Step Two: Rendering an Image in the Window
 
 ![Step Two](http://i.imgur.com/5CraUbf.png)
-* 
-* 
-* 
-* 
-* 
+* create a class Ruby
+* initialize method takes four parameters: window, x, y, width, height
+..* create instance variables that equal to those parameters! (ex: @width = width, @height = height)
+..* note: the radius will be equal to the width divided by 2
+..* the instance variable for your ruby image will contain three parameters- window, image location, as well as options
+* now that we've initialized our Ruby class, we'll fill out the draw method:
+..* call the image instance variable and 
+
 
 ![Step Two A](http://i.imgur.com/IBcQYBz.png)
+
 Now that we've created our image class, let's implement it in class Tester!
-* 
-* 
-* 
+* we've previously created two unused method in class Tester: the draw method and the update method; we'll be using the draw method now.
+..* in the draw method, refer to your image instance variable and accompany it with a ".draw"! easy peasy.
+* in the initialize method, we'll call on the image instance variable once more, and fill out the parameters we called on in the class Ruby initialize method
+..* remember initialize(window, x, y, width, height)? 
+
 
 Yay, a ruby!
 
