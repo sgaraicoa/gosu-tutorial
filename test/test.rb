@@ -12,8 +12,8 @@ class Ruby
     @radius = @width/2
     @window = window
     @ruby = Gosu::Image.new(@window, 'ruby.png', :options => true)
-    @vx = 5
-    @vy = 5
+    @vx = 1
+    @vy = 1
   end
 
   def draw
@@ -74,14 +74,31 @@ class Test < Gosu::Window
     @ruby = Ruby.new(self, 200, 200, 50, 50)
     @rubies = Array.new
     @randy = Random.new
+    # @ruby= Ruby.new(self, @randy.rand(200), @randy.rand(200), 50, 50)
 
+  end
+
+  def add_new_ruby
+    if button_down? KbEscape
+      @new_ruby= Ruby.new(self, @randy.rand(600), @randy.rand(400), 50, 50)
+      @rubies.push(@new_ruby)
+    end
   end
 
   def update
     @ruby.move
-    @ruby_two= Ruby.new(self, @randy.rand(50), @randy.rand(50), 50, 50)
-    @rubies.push(@ruby_two)
+    # @ruby= Ruby.new(self, @randy.rand(600), @randy.rand(400), 50, 50)
+    # @rubies.push(@ruby)
+    @rubies.each {|ruby| ruby.move} if add_new_ruby
     # @ruby_two = Ruby.new(self, 200, 200, 50, 50)
+  end
+
+  def button_down(id)
+    if id == Gosu::KB_SPACE
+      add_new_ruby
+    else
+      super
+    end
   end
 
   def draw
