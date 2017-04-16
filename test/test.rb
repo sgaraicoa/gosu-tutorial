@@ -13,8 +13,8 @@ class Ruby
     @window = window
     # takes the image passed everytime a new Ruby instance is created
     @ruby = Gosu::Image.new(@window, image, :options => true)
-    @vx = 1
-    @vy = 1
+    @vx = 3
+    @vy = 3
   end
 
   def draw
@@ -71,17 +71,17 @@ end
 class Test < Gosu::Window
 
   def initialize #(width=600, height=400, fullscreen=false)
-    super 800, 500
+    super 960, 600
     @ruby = Ruby.new(self, 200, 200, 50, 50, 'ruby.png')
     @rubies = Array.new
     @randy = Random.new
-    @background_image = Gosu::Image.new("fancy-court.png", :tileable => true)
+    @background_image = Gosu::Image.new("clouds.png", :tileable => true)
     # @ruby= Ruby.new(self, @randy.rand(200), @randy.rand(200), 50, 50)
 
   end
 #just triggers when key id is true and adds the imaged passed depending on the key_down
   def add_new_ruby(id, image)
-    if id 
+    if id
       @new_ruby= Ruby.new(self, @randy.rand(600), @randy.rand(400), 50, 50, image)
       @rubies.push(@new_ruby)
     end
@@ -115,4 +115,4 @@ class Test < Gosu::Window
 
 end
 
-Test.new.show 
+Test.new.show
