@@ -162,5 +162,5 @@ We're going to add multiple images to our game. In order to do that, we're going
 
 ![turtle ruby gif](https://i.gyazo.com/cbbe7815f9d5216c11c9e6ae389086a9.gif)
 
-Look at that, guys! We've managed to create a Gosu Window, a background image, and two moveable images, and all in 120 lines of code. This just reinforces the fact that Gosu is a lightweight engine that, in conjuction with the efficiency and speed of Ruby, makes it easy for programmers to render a simple game or app. Thank you
+Look at that, guys! We've managed to create a Gosu Window, a background image, and two moveable images, and all in 120 lines of code. This just reinforces the fact that Gosu is a lightweight engine that, in conjuction with the efficiency and speed of Ruby, makes it easy for programmers to render a simple game or app. Thank you for reading our tutorial!
 
