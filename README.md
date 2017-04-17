@@ -139,7 +139,9 @@ Next up, we're going to create a new instance variable in class Tester for our b
 ![http://i.imgur.com/rFr2k7w.png](http://i.imgur.com/rFr2k7w.png)
 * Note: Pay attention to the comments
 
-RUBY/CLOUD GIF GOES HERE. I GOTTA DO IT ON SOMEONE ELSE COMPUTER BECAUSE GYAZO ISN'T WORKING FOR ME >:(
+Go ruby, go clouds!
+![ruby cloud gif](https://i.gyazo.com/3f82f5cab6b76427281fa64c3be71e07.gif)
+
 
 #### Step Five: Adding Multiple Images
 
