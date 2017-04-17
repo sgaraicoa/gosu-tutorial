@@ -138,5 +138,11 @@ Next up, we're going to create a new instance variable in class Tester for our b
 ![http://i.imgur.com/rFr2k7w.png](http://i.imgur.com/rFr2k7w.png)
 * Note: Pay attention to the comments
 
+RUBY/CLOUD GIF GOES HERE. I GOTTA DO IT ON SOMEONE ELSE COMPUTER BECAUSE GYAZO ISN'T WORKING FOR ME >:(
+
+#### Step Five: Adding a Second Player
+
+One player games can be boring at times, why don't we add a second player to our beginner game? 
+
 
 
