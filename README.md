@@ -115,7 +115,7 @@ The following code belongs in your class Ruby
 
 
 ![Step Three A](http://i.imgur.com/VuzgGFJ.png)
-* 
+* in the move method, we're going to call on the methods created in the previous image. the "if" statements are telling the ruby "if you hit this wall, do 'this'"
 
 ![Step Three B](http://i.imgur.com/iwIHBX7.png)
 * my skill in drawing circles is impeccable
@@ -142,7 +142,11 @@ RUBY/CLOUD GIF GOES HERE. I GOTTA DO IT ON SOMEONE ELSE COMPUTER BECAUSE GYAZO I
 
 #### Step Five: Adding a Second Player
 
-One player games can be boring at times, why don't we add a second player to our beginner game? 
+We're going to add a "second player" to our game. In order to do that, we're going to change our ```@ruby``` instance method so it's more reuseable. 
+
+[Step Five]()
+
+
 
 
 
