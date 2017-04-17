@@ -69,8 +69,7 @@ The best way to learn a new framework or language is to make a simple game or ap
 
 #### Step One: Gosu Window
 
-![Step One](http://i.imgur.com/r6BKWv0.png)
-* require ruby and gosu, include Gosu
+![Step One](http://i.imgur.com/HUdM0yw.png)
 * class Tester inherits from Gosu::Window
 * initialize method takes three parameters: width, height, fullscreen
 * call on class Tester with Tester.new.show
