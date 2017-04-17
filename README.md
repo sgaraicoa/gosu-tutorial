@@ -124,3 +124,19 @@ We've got movement! Go, ruby, go!
 
 ![gif](https://i.gyazo.com/7db1fd534f3f0c14df85fcfff5921896.gif)
 
+#### Step Four: Background Image
+
+Thus far, we've seen how easy it is to render a Gosu window, add a player to the screen, and make it movable. Now we're going to add a background image, and marvel at its' simplicity!
+
+In the initialize method of class Tester, we provided parameters indicating the height and width of the window. The more we learn about Gosu (and Ruby, by extension), the more we realize there's different ways of doing things. Let's switch it up a bit by commenting our that line of code and placing our new height and width right next to super.
+
+![Step Four](http://i.imgur.com/6DcLDtW.png)
+* Test that out!
+
+Next up, we're going to create a new instance variable in class Tester for our background image. Indicated by my fabulous red dots, we see it created in the initialize method, then called in the draw method.
+
+![http://i.imgur.com/rFr2k7w.png](http://i.imgur.com/rFr2k7w.png)
+* Note: Pay attention to the comments
+
+
+
