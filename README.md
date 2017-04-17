@@ -158,6 +158,10 @@ We're going to add multiple images to our game. In order to do that, we're going
 * note: we're still in class Tester for these methods
 
 ![Step Five C](http://i.imgur.com/U5148Sj.png)
+* in order for the user to actually render multiple images, we'll create a button down method that says: "If the space button is pressed, create another ruby." Then we're going to throw in a little surprise turtle! "If the T button is pressed, create a turtle!"
 
+![turtle ruby gif](https://i.gyazo.com/cbbe7815f9d5216c11c9e6ae389086a9.gif)
+
+Look at that, guys! We've managed to create a Gosu Window, a background image, and two moveable images- what a great way to start your game!
 
 
